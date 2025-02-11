@@ -43,11 +43,13 @@ function escolherNome(){
   numero = parseInt(Math.random() * amigos.length);
    console.log (numero);
    let escolhido = amigos[numero];
-   let nomeNaTela = document.querySelector ('h2');
+   let nomeNaTela = document.getElementById('resultado');
    nomeNaTela.innerHTML = (escolhido);
+   zeraNome = document.getElementById('listaAmigos');
+   zeraNome.innerHTML = '';
+   
 
    
     amigos.splice(numero, 1);
     console.log (amigos);
-    listarNomes();
 }
