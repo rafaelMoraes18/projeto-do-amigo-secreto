@@ -26,6 +26,10 @@ function sortearAmigo(){
         escolherNome();
 }
 }  
+function ocultar(){
+    nada = document.getElementById('resultado');
+    nada.innerHTML= '';
+}
 
 
 
